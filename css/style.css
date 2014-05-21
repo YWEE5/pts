@@ -68,12 +68,17 @@ header {
 /* Content */
 aside {
 	width: 20%;
+  height: 420px;
 	background-color: blue;
 	float: left;
   list-style: none;
 }
+aside li {
+  padding: 14px;
+}
 #content {
 	width: 60%;
+  min-height: 420px;
 	background-color: fuchsia;
 	float: left;
 	margin :0 auto;
@@ -175,4 +180,12 @@ nav {
 }
 #slideShowImages_noscript {
 display:none;
+}
+
+/*Sidebar (right) */
+#video {
+  height: 92px;
+}
+#slideshow {
+  height: 92px !important;
 }
