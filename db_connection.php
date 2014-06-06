@@ -5,9 +5,9 @@
    
           
       if (!$conn)
-          echo "Verbindung konnte nicht hergestellt werden";  
+          echo "Verbindung konnte nicht hergestellt werden!";  
     
       else
-          echo "Verbindung hergestellt";
+          echo "Verbindung hergestellt!";
     
 ?>
