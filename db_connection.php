@@ -8,5 +8,4 @@
     
     else
         echo "Verbindung hergestellt!";
-    
 ?>
