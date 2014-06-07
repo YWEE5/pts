@@ -1,172 +1,10 @@
-nav {
-  width: 100%;
-}
-#navigation{
-margin:auto;
-}
-#navigation ul
-{
-        margin: 0;
-        padding: 0;
-}
 
-
-#navigation ul li
-{   
-    float: left;
-    background-color: #4F81BC;
-    display: inline;
-    
-    padding-top: 10px;
-    
-    font-size: x-large;
-    font-weight: bolder;
-    color: white;
-    
-    text-decoration: none;
-    text-align: center;
-    
-    width: 140px;
-    height: 40px;
-    
-   
-    border-style: solid;
-    border-color: white;
-    border-width: thin;
-    border-top-style:none ;
-
-    list-style-type: none;
-}
-
-#navigation ul li a
-{
-        text-decoration: none;
-        color: white;
-    
-}
-#navigation ul li a:hover
-{ 
-    text-decoration: none;
-    color: white;
-}
-
-#navigation ul ul
-{
-    margin-top: 13px;
-}
-
-#navigation ul li li 
-{
-      background-color: #4F81BC;
-      display: none;
-      list-style-type: none;
-      float:left;
-      width: 140px;
-      height: 30px;
-      text-decoration: none;
-      color: white;
-}
-#navigation ul li li a
-{
-    display: block;
-    font-size: large;
-}
-
-#navigation ul li li:hover
-{
-     background-color: #808080;
-}
-
-
-#navigation ul
-{
-        margin: 0;
-        padding: 0;
-}
-
-
-#navigation ul li
-{
-    float: left;
-    background-color: #4F81BC;
-    display: inline;
-
-    padding-top: 10px;
-
-    font-size: x-large;
-    font-weight: bolder;
-    color: white;
-
-    text-decoration: none;
-    text-align: center;
-
-    width: 140px;
-    height: 40px;
-
-
-    border-style: solid;
-    border-color: white;
-    border-width: thin;
-    border-top-style:none;
-
-    list-style-type: none;
-}
-
-#navigation ul li a
-{
-        text-decoration: none;
-        color: white;
-
-}
-
-
-#navigation ul li a:hover
-{
-
-    text-decoration: none;
-    color: white;
-
-}
-
-#navigation ul ul
-{
-    margin-top: 13px;
-}
-
-#navigation ul li li
-{
-      background-color: #4F81BC;
-      display: none;
-      list-style-type: none;
-      float:left;
-      width: 140px;
-      height: 30px;
-
-      text-decoration: none;
-      color: white;
-
-
-
-}
-
-#navigation ul li li a
-{
-
-    display: block;
-    font-size: large;
-
-}
-
-#navigation ul li li:hover
-{
-     background-color: #808080;
-}
 
 #slideShowImages{
-display:none;
+display:none !important;
 }
 #slideShowImages_noscript{
-display:block;
+display:block !important;
 }
 #navigation ul li:hover > ul li
 {
@@ -177,4 +15,8 @@ display:block;
 #navigation ul li:hover > ul li:hover
 {
     background-color: #808080;
+}
+#slideShowImages_noscript img{
+float:left;
+
 }

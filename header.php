@@ -5,11 +5,12 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
 		<title>YWEE</title>
-		
+		 <noscript><link href="css/style_noscript.css" type="text/css" rel="stylesheet" /></noscript>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
-		 <noscript><link href="css/style_noscript.css" type="text/css" rel="stylesheet" /></noscript>    
+		    
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/jquery-ui-1.10.4.custom.js"></script>
 		<meta name="description" content="Personal Tutoring Service" />
 		<meta name="description" content="tutoring service student" />
 	</head>
@@ -42,12 +43,14 @@
 								  </ul>
 								</li> 
 								<li><a href="#">&Uuml;ber</a></li> 
-								<li><a href="#">Kontakt</a></li> 
+								<li><a href="anmeldeformular.php">Kontakt</a></li> 
 						   </ul> 
-						  <div class="clear"> </div>
+						  
 						</div>
 					</nav>
 					
 				</div> 
+			
+				
 				
 			</header>
