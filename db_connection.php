@@ -1,13 +1,12 @@
 <?php
+	require_once('login-data.php');
 
-     $conn = new PDO("mysql:host=rdbms.strato.de;dbname=DB1695068", "U1695068" , "DBWE05org");
-    
-   
+	$conn = new PDO(sprintf('mysql:host=%s;dbname=%s', $host, $database), $username, $password);
           
-      if (!$conn)
-          echo "Verbindung konnte nicht hergestellt werden";  
+    if (!$conn)
+    	echo "Verbindung konnte nicht hergestellt werden!";  
     
-      else
-          echo "Verbindung hergestellt";
+    else
+        echo "Verbindung hergestellt!";
     
 ?>
