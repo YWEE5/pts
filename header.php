@@ -4,8 +4,13 @@
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
+<<<<<<< HEAD
 		<title>YWEE</title>
 		 <noscript><link href="css/style_noscript.css" type="text/css" rel="stylesheet" /></noscript>
+=======
+		<title>YWEE05</title>
+		
+>>>>>>> af8120421f64dcfd2d30743503f22e54a0ce86a0
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
 		    
 		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
