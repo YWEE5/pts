@@ -2,8 +2,8 @@
     error_reporting(E_ALL);
     $MYSQL_HOST = 'ch3rr1.me';
     $MYSQL_USER = 'd01ac4d3';
-    $MYSQL_PASS = 'DBWE05org';
-    $MYSQL_DATA = '9NRCCUa6Sezw5NhT';
+    $MYSQL_PASS = '9NRCCUa6Sezw5NhT';
+    $MYSQL_DATA = 'd01ac4d3';
 
     $connid = @mysql_connect($MYSQL_HOST, $MYSQL_USER, $MYSQL_PASS) OR die("Error: ".mysql_error());
     mysql_select_db($MYSQL_DATA) OR die("Error: ".mysql_error());
