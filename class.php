@@ -11,7 +11,7 @@ try{
 		echo 'Keine Datensätze gefunden!';
 	} else {
 		foreach($result as $row) {
-			echo $row['Vorname'] . ' ' . $row['Nachname'] . '<br />';
+			echo $row['Bezeichnung'] . '<br />';
 		}
 	}
 }
