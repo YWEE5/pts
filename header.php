@@ -16,7 +16,8 @@
 	</head>
 	<body>
 		<div id="wrapper">
-			<header> 
+			<header>
+				<div id="logo"><h1>Personal Tutoring Service</h1></div>
 				<div id="slideshow-noscript">
 					<img class='slider-img' src="img/slide1.png" alt="Slide 1" />
 				</div> 
