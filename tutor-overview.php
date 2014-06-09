@@ -1,7 +1,7 @@
 <?php
 	require_once('db_connection.php');
 
-	$stmt = $conn->prepare('SELECT * FROM tutor');
+	$stmt = $conn->prepare('SELECT * FROM benutzer');
 
 	if(!$stmt) {
 		echo 'Keine Tutoren gefunden!';
@@ -10,9 +10,8 @@
 		while($row = mysqli_fetch_array($stmt)) {
 			echo '<div class="entry">';
 			// echo all the data you want to display
-			echo $row['name'];
-			echo $row['secondname'];
-			echo $row['classes'];
+			echo $row['Vorname'];
+			echo $row['Nachname'];
 
 			echo '</div>';
 		}
