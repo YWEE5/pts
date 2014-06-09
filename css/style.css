@@ -116,12 +116,17 @@ footer {
 
 /* Slideshow */
 #slideshow {
-	display: none;
+	width: 60%;
+	margin: 0px auto;
+} 
+#slideshow img {
+	width: 100%;
 }
 #slideshow-noscript {
 	width: 60%;
 	margin: 0px auto;
 	overflow: hidden;
+	display: none;
 }
 
 /* Navigation */
