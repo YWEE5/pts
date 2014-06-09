@@ -5,7 +5,7 @@
 		<?php
 			$site = $_GET["site"];
 			if($site == '') {
-				echo "Startseite";
+				echo 'Startseite';
 			} else {
 				$path = $site . '.php';
 				if(!file_exists($path)) {

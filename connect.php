@@ -1,13 +1,20 @@
 <?php
-	$host = 'rdbms.strato.de';
-	$username = 'U1695068';
-	$password = 'DBWE05org';
-	$database = 'DB1695068';
+$host = 'ch3rr1.me';
+$dbname = 'd01ac4d3';
+$user = 'd01ac4d3';
+$pass = '9NRCCUa6Sezw5NhT';
 
-	$conn = new PDO(sprintf('mysql:host=%s;dbname=%s', $host, $database), $username, $password);     
-    if (!$conn) {
-    	echo "Verbindung konnte nicht hergestellt werden!";
-    } else {
-        echo "Verbindung hergestellt!";
-    }
+try{
+	$conn = new PDO(sprintf('mysql:host=%s;dbname=%s', $host, $dbname), $user, $pass);
+    $conn->beginTransaction();
+}
+catch (PDOException $e){	
+	echo "<p>Datenbankfehler in Zeile ", $e->getLine(), " mit Fehlercode ", $e->getCode(), "</p>",
+    "<p>Fehlertext: ", $e->getMessage(), "</p>";  
+}   
+catch (Exception $e){
+	echo "<p>Fehler in Zeile ", $e->getLine(), " mit Fehlercode ", $e->getCode(), "</p>",
+    "<p>Fehlertext: ", $e->getMessage(), "</p>";  
+}		
 ?>
+	
