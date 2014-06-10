@@ -27,13 +27,14 @@
 					<img class='slider-img' src="img/slide3.png" alt="Slide 3" />    
 					<img class='slider-img' src="img/slide4.png" alt="Slide 4" />
 				</div> 
-				<nav>
+				<nav id="nav" role="navigation">
 					<ul>
 						<li><a href="index.php">Home</a></li> 
 						<li><a href="?site=search">Suche</a></li> 
-						<li><a href="?site=tutor">Tutoren</a></li> 
-						<li><a href="?site=class">Kurse</a>
-							<ul>
+						<li><a href="?site=tutor">Tutoren</a></li>
+						<li>
+							<a href="?site=class">Kurse</a>
+							<ul class="fallback">
 								<li><a href="#">Mathematik</a></li>
 							 	<li><a href="#">Deutsch</a></li>
 							 	<li><a href="#">Englisch</a></li>

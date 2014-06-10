@@ -152,12 +152,21 @@ nav {
 	margin: 0px auto;
 	background-color: grey;
 }
-nav ul li {
-	display: inline;
-}
-nav ul li ul {
-	display: none;
-}
+/* nochma checken... */
+	nav ul {text-align:center;}
+	nav ul li {float:left;display:inline;}
+	nav ul li a {display:block;padding:5px 25px;color:#444;}
+	nav ul li ul li {width:110px;}
+	nav ul li ul li a {display:block;padding:15px 10px;color:#444;}
+	nav ul li ul li:hover a {background:#F7F7F7;}
+	nav ul li ul.fallback {display:none;}
+	nav ul li:hover ul.fallback {display:block;}
+	#nav > a {display: none;}
+	#nav li {position: relative;}
+	#nav > ul > li {width: 15%;height: 100%;float: left;}
+	#nav ul li:hover {background:#E6E6E6;}
+	#nav li ul {display: none;position:absolute;width:110px;background:#FFF;top: 100%;}
+	#nav li:hover ul {display: block;}
 
 /* Sidebars */
 #login {
