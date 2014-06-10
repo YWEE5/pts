@@ -180,3 +180,192 @@ nav {
 	height: 200px;
 	background-color: blue;
 }
+
+
+/**********************************************sehli CSS*/
+
+.star-rating.star_5 {
+  background-position: 0 -150px;
+}
+
+.star-rating {
+  background-image: url("img/user-star-rating.png");
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 15px;
+  margin: -6px 5px 0 0;
+  vertical-align: middle;
+  width: 76px;
+}
+.user .photo {
+  border-radius: 3px;
+  float: left;
+  margin-top: 1px;
+}
+.trip-search-oneresult .user {
+  width: 190px;
+}
+.trip-search-results .trip {
+  -moz-border-bottom-colors: none;
+  -moz-border-left-colors: none;
+  -moz-border-right-colors: none;
+  -moz-border-top-colors: none;
+  border-color: -moz-use-text-color -moz-use-text-color #CCCCCC;
+  border-image: none;
+  border-style: none none solid;
+  border-width: 0 0 1px;
+  list-style: none outside none;
+}
+
+.star-rating.star_0 {
+    background-position: 0 0;
+}
+.star-rating.star_0_5 {
+    background-position: 0 -15px;
+}
+.star-rating.star_1 {
+    background-position: 0 -30px;
+}
+.star-rating.star_1_5 {
+    background-position: 0 -45px;
+}
+.star-rating.star_2 {
+    background-position: 0 -60px;
+}
+.star-rating.star_2_5 {
+    background-position: 0 -75px;
+}
+.star-rating.star_3 {
+    background-position: 0 -90px;
+}
+.star-rating.star_3_5 {
+    background-position: 0 -105px;
+}
+.star-rating.star_4 {
+    background-position: 0 -120px;
+}
+.star-rating.star_4_5 {
+    background-position: 0 -135px;
+}
+.star-rating.star_5 {
+    background-position: 0 -150px;
+}
+.big-star-rating {
+    background-image: url("/img/user-big-star-rating.png");
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 22px;
+    margin: -6px 5px 0 0;
+    vertical-align: middle;
+    width: 115px;
+}
+.big-star-rating.star_0 {
+    background-position: 0 0;
+}
+.big-star-rating.star_0_5 {
+    background-position: 0 -22px;
+}
+.big-star-rating.star_1 {
+    background-position: 0 -44px;
+}
+.big-star-rating.star_1_5 {
+    background-position: 0 -66px;
+}
+.big-star-rating.star_2 {
+    background-position: 0 -88px;
+}
+.big-star-rating.star_2_5 {
+    background-position: 0 -110px;
+}
+.big-star-rating.star_3 {
+    background-position: 0 -132px;
+}
+.big-star-rating.star_3_5 {
+    background-position: 0 -154px;
+}
+.big-star-rating.star_4 {
+    background-position: 0 -176px;
+}
+.big-star-rating.star_4_5 {
+    background-position: 0 -198px;
+}
+.big-star-rating.star_5 {
+    background-position: 0 -220px;
+}
+.user .user-trust, .user .photo {
+    margin-left: 10px;
+}
+.user .user-trust-fb {
+    clear: both;
+    display: block;
+    float: left;
+    padding: 2px 0 4px;
+}
+.user .user-trust-fb .icon-fb-small {
+    margin: -2px 0 0;
+}
+.user .photo {
+    border-radius: 3px;
+    float: left;
+    margin-top: 1px;
+}
+.user h2 {
+    color: #333333;
+    font-size: 15px;
+    font-weight: bold;
+    line-height: 1;
+    margin: 0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.user .verifications, .user .prefs {
+    display: inline;
+    padding: 0;
+}
+.user .verifications li, .user .prefs li {
+    display: inline;
+    list-style: none outside none;
+}
+.user .verification {
+    margin: 0;
+}
+.user-info {
+    float: left;
+    font-size: 12px;
+    margin: 0 0 0 8px;
+    padding-top: 6px;
+    width: 95px;
+}
+.user-info .username {
+    margin-bottom: 2px;
+}
+.user-trust {
+    clear: both;
+    font-size: 12px;
+    padding-top: 4px;
+}
+.user-trust .rating-container .star-rating {
+    display: inline-block;
+    margin: -2px 5px 0 0;
+}
+.user-trust .preferences-container {
+    clear: both;
+}
+.geo-from, .geo-to, .car-type {
+    color: #666666;
+    line-height: 22px;
+    margin: 0;
+}
+.geo-from .icon, .geo-to .icon, .car-type .icon {
+    margin-top: -2px;
+    overflow: hidden;
+    text-align: left;
+    text-indent: -119988px;
+}
+ .description {
+  margin: 0 0 0 5px;
+  width: 100%;
+}
+ .description p {
+ margin:5px 20px;
+ }
