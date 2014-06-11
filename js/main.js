@@ -3,7 +3,10 @@ $(document).ready(function() {
     $(this).find('ul>li').stop().fadeToggle(300);
   });
 });
-	 
+	        window.onload = function(){
+            if(location.hash != "")
+                changeClip();
+        } 
 window.addEventListener('load', slideShow, false);
 
 function slideShow() {  
@@ -164,3 +167,19 @@ $('nav li').hover(
     $('ul', this).stop().slideUp(100);
   }
 );
+// ***** Video 
+
+        function changeClip(){
+            window.setTimeout("cClip()", 50);
+        }
+        function cClip(){
+            var url = location.hash.split('#');
+
+    document.getElementById('clip').innerHTML = '<object width="480" height="385">'+
+        '<param name="allowfullscreen" value="true" />'+
+        '<param name="allowscriptaccess" value="always" />'+
+        '<param name="movie" value="' + url[1] + '" />'+
+        '<embed src="' + url[1] + '" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="385"></embed>'+
+    '</object>';
+}
+
