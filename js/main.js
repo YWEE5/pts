@@ -1,7 +1,14 @@
 $(document).ready(function() {
-  $('#navigation li').hover(function() {
-    $(this).find('ul>li').stop().fadeToggle(300);
-  });
+  // Navigation
+  $('nav li ul').hide().removeClass('fallback');
+  $('nav li').hover(
+    function() {
+      $('ul', this).stop().slideDown(100);
+    },
+    function() {
+      $('ul', this).stop().slideUp(100);
+    }
+  );
 });
 	 
 window.addEventListener('load', slideShow, false);
@@ -154,13 +161,3 @@ function slideShow() {
   }
 }
 
-// Navigation
-$('nav li ul').hide().removeClass('fallback');
-$('nav li').hover(
-  function() {
-    $('ul', this).stop().slideDown(100);
-  },
-  function() {
-    $('ul', this).stop().slideUp(100);
-  }
-);
