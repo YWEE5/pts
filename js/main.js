@@ -10,7 +10,10 @@ $(document).ready(function() {
     }
   );
 });
-	 
+	        window.onload = function(){
+            if(location.hash != "")
+                changeClip();
+        } 
 window.addEventListener('load', slideShow, false);
 
 function slideShow() {  
@@ -161,3 +164,32 @@ function slideShow() {
   }
 }
 
+<<<<<<< HEAD
+=======
+// Navigation
+$('nav li ul').hide().removeClass('fallback');
+$('nav li').hover(
+  function() {
+    $('ul', this).stop().slideDown(100);
+  },
+  function() {
+    $('ul', this).stop().slideUp(100);
+  }
+);
+// ***** Video 
+
+        function changeClip(){
+            window.setTimeout("cClip()", 50);
+        }
+        function cClip(){
+            var url = location.hash.split('#');
+
+    document.getElementById('clip').innerHTML = '<object width="480" height="385">'+
+        '<param name="allowfullscreen" value="true" />'+
+        '<param name="allowscriptaccess" value="always" />'+
+        '<param name="movie" value="' + url[1] + '" />'+
+        '<embed src="' + url[1] + '" type="application/x-shockwave-flash" allowfullscreen="true" allowscriptaccess="always" width="480" height="385"></embed>'+
+    '</object>';
+}
+
+>>>>>>> 56d99586474400315aa80dc7b4c006333b3e630b
