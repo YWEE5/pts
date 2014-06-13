@@ -13,7 +13,7 @@ try{
 		echo '<table>';
 		foreach($result as $row) {
 			echo '<tr>';
-			echo '<a href="?site=tutor-detail&tutorId=' .$row['U_ID'] . '">' . $row['Vorname'] . ' ' . $row['Nachname'] . '</a><br />';
+			echo '<td><a href="?site=tutor-detail&tutorId=' .$row['U_ID'] . '">Details</a></td><td>' . $row['Vorname'] . '</td><td>' . $row['Nachname'] . '</td>';
 			echo '</tr>';
 		}
 		echo '</table>';
