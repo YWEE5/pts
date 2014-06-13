@@ -10,9 +10,13 @@ try{
 	if(!$result) {
 		echo 'Keine Datensätze gefunden!';
 	} else {
+		echo '<table>';
 		foreach($result as $row) {
+			echo '<tr>';
 			echo '<a href="?site=tutor-detail&tutorId=' .$row['U_ID'] . '">' . $row['Vorname'] . ' ' . $row['Nachname'] . '</a><br />';
+			echo '</tr>';
 		}
+		echo '</table>';
 	}
 }
 catch (PDOException $e){	
