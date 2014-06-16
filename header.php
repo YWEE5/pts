@@ -1,10 +1,7 @@
+<?php session_start(); ?>
+
 <!DOCTYPE html>
 
-<?php
-if(!isset($_SESSION)) { 
-    session_start(); 
-}
-?>
 <html>
 	<head>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />

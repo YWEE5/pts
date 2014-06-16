@@ -8,21 +8,16 @@ fclose ($handle);
 
 <aside id="sidebar-left">
 	<?php
-
-	echo "<h5>Bisher <b>$inhalt</b> Besucher hier</h5><br />";
- 
-	
-		
+	echo "<strong>$inhalt</strong> Besucher<br />";
 	?>
 	
-	
 	<div class="span-8 last side-bar">
-                    <h5>Nos services</h5>
-                    <ul class="navigation-sidebar">
-								<li><a href="">Gebuchte Kurse</a></li>
-								<li><a href="">Bewertungen</a></li>
-								<li><a href="">Gästebuch</a></li>
-								<li><a href="">Privater Ordner</a></li>
-                    </ul>
+        <h5>Service</h5>
+        <ul class="navigation-sidebar">
+			<li><a href="">Gebuchte Kurse</a></li>
+			<li><a href="">Bewertungen</a></li>
+			<li><a href="">Gästebuch</a></li>
+			<li><a href="">Privater Ordner</a></li>
+        </ul>
      </div>
 </aside>
