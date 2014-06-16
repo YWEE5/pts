@@ -8,18 +8,21 @@ fclose ($handle);
 
 <aside id="sidebar-left">
 	<?php
-	$inhalt = $inhalt + 1;
-	echo "<p>Bisher <b>$inhalt</b> Besucher hier</p><br />";
+
+	echo "<h5>Bisher <b>$inhalt</b> Besucher hier</h5><br />";
  
-	// Schreiben des neuen Wertes
-	$handle = fopen ($dateinamen, "w");
-	fwrite ($handle, $inhalt);
-	fclose ($handle);
+	
+		
 	?>
-	<ul>
-		<li>Gebuchte Kurse</li>
-		<li>Bewertungen</li>
-		<li>Gästebuch</li>
-		<li>Privater Ordner</li>
-	</ul>
+	
+	
+	<div class="span-8 last side-bar">
+                    <h5>Nos services</h5>
+                    <ul class="navigation-sidebar">
+								<li><a href="">Gebuchte Kurse</a></li>
+								<li><a href="">Bewertungen</a></li>
+								<li><a href="">Gästebuch</a></li>
+								<li><a href="">Privater Ordner</a></li>
+                    </ul>
+     </div>
 </aside>

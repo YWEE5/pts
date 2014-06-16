@@ -65,4 +65,18 @@
         // Rechte in der Session speichern
        // $_SESSION['Rechte'] = getRights();
     }
+	function besucherzaehler()
+    {
+		$inhalt = '0';
+		$dateinamen = "besucherzaehler.txt";
+		$handle = fopen ($dateinamen, "r");
+		$inhalt = fread ($handle, filesize ($dateinamen));
+		fclose ($handle); 
+		
+		$handle = fopen ($dateinamen, "w");
+		fwrite ($handle, $inhalt);
+		fclose ($handle);
+		return($inhalt);
+	}
+	
 ?>

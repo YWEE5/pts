@@ -12,19 +12,25 @@ if(!isset($_SESSION)) {
 
 		<title>YWEE</title>
 		<link rel="stylesheet" href="css/style.css" type="text/css" />
+		<link rel="stylesheet" href="https://cdn.datatables.net/1.10.0/css/jquery.dataTables.css" type="text/css" />
 
 		<meta name="description" content="Personal Tutoring Service" />
 		<meta name="description" content="tutoring service student" />
 		    
-		<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+		<script src="js/jquery.js"></script>
+		<script src="https://cdn.datatables.net/1.10.0/js/jquery.dataTables.js"></script>
 		<script src="js/main.js"></script>
+		
 	</head>
 	<body>
 		<div id="wrapper">
 			<header>
-				<div id="logo"><h1>Personal Tutoring Service</h1></div>
-				<div id="slideshow-noscript">
-					<img class='slider-img' src="img/slide1.png" alt="Slide 1" />
+			
+				
+				<div id="slideshowborder">
+					<div id="slideshow-noscript">
+						<img class='slider-img' src="img/slide1.png" alt="Slide 1" />
+					</div> 
 				</div> 
 				<div id="slideshow">
 					<img class='slider-img' src="img/slide1.png" alt="Slide 1" />
@@ -32,6 +38,7 @@ if(!isset($_SESSION)) {
 					<img class='slider-img' src="img/slide3.png" alt="Slide 3" />    
 					<img class='slider-img' src="img/slide4.png" alt="Slide 4" />
 				</div> 
+			
 				<nav id="nav" role="navigation">
 					<ul>
 						<li><a href="index.php">Home</a></li> 

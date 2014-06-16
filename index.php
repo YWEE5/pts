@@ -5,6 +5,10 @@
 		<?php
 			$site = $_GET["site"];
 			if($site == '') {
+				$inhalt = $inhalt + 1;
+				$handle = fopen ($dateinamen, "w");
+				fwrite ($handle, $inhalt);
+				fclose ($handle);
 				echo 'Startseite';
 			} else {
 				$path = $site . '.php';
