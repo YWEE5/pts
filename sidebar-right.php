@@ -9,7 +9,7 @@
 			echo "<a href='?site=login'>Login</a><br />";
 		}
 		?>
-		<a href="?site=register">Registrieren</a>
+		<a href="register.php">Registrieren</a>
 	</div>
 	<div id="video">
 		Video

@@ -1,14 +1,15 @@
   <?php
 error_reporting(E_ALL);
-$MYSQL_HOST = 'ch3rr1.me';
-$MYSQL_USER = 'd01ac4d3';
-$MYSQL_PASS = '9NRCCUa6Sezw5NhT';
-$MYSQL_DATA = 'd01ac4d3';
 
-$connid = @mysql_connect($MYSQL_HOST, $MYSQL_USER, $MYSQL_PASS) OR die("Error: ".mysql_error());
-mysql_select_db($MYSQL_DATA) OR die("Error: ".mysql_error());
+define ('MYSQL_HOST', 'ch3rr1.me');
+define ('MYSQL_USER', 'd01ac4d3');
+define ('MYSQL_PASS', '9NRCCUa6Sezw5NhT');
+define ('MYSQL_DATA', 'd01ac4d3');
 
-session_start();
+$connid = @mysql_connect(MYSQL_HOST, MYSQL_USER, MYSQL_PASS) OR die("Error: ".mysql_error());
+    
+    mysql_select_db(MYSQL_DATA) OR die("Error: ".mysql_error());
+
 
 if(isset($_POST['submit']) AND $_POST['submit']=='Registrieren'){
     // Fehlerarray anlegen
@@ -29,7 +30,7 @@ if(isset($_POST['submit']) AND $_POST['submit']=='Registrieren'){
                          Nickname,
                          Email
                  FROM
-                         User
+                         benutzer
                 ";
         $result = mysql_query($sql) OR die("<pre>\n".$sql."</pre>\n".mysql_error());
         while($row = mysql_fetch_assoc($result)){
@@ -105,7 +106,7 @@ if(isset($_POST['submit']) AND $_POST['submit']=='Registrieren'){
 else {
     echo "<form ".
          " name=\"Registrierung\" ".
-         " action=\"".$_SERVER['PHP_SELF']."\" ".
+         " action=\"".$_SERVER['PHP_SELF']."\" ". "/?site=register" .
          " method=\"post\" ".
          " accept-charset=\"ISO-8859-1\">\n";
     echo "<h5>Obligatorische Angaben</h5>\n";
